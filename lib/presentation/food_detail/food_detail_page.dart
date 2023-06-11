@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:foodpedia/common/constant.dart';
-import 'package:foodpedia/data/source/remote/food/FoodDetailResponse.dart';
+import 'package:foodpedia/data/source/remote/food/food_detail_response.dart';
 import 'package:foodpedia/presentation/food_detail/bloc/food_detail_bloc.dart';
 
 class FoodDetailPage extends StatefulWidget {

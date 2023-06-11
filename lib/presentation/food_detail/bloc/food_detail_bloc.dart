@@ -1,6 +1,6 @@
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
-import 'package:foodpedia/data/source/remote/food/FoodDetailResponse.dart';
+import 'package:foodpedia/data/source/remote/food/food_detail_response.dart';
 import 'package:foodpedia/domain/use_case/food/get_food_detail.dart';
 
 part 'food_detail_event.dart';

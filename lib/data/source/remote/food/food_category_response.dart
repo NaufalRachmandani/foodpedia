@@ -1,4 +1,6 @@
-class FoodCategoryResponse {
+import 'package:equatable/equatable.dart';
+
+class FoodCategoryResponse extends Equatable {
   List<Meals>? meals;
 
   FoodCategoryResponse({this.meals});
@@ -13,15 +15,18 @@ class FoodCategoryResponse {
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = new Map<String, dynamic>();
-    if (this.meals != null) {
-      data['meals'] = this.meals!.map((v) => v.toJson()).toList();
+    final Map<String, dynamic> data = Map<String, dynamic>();
+    if (meals != null) {
+      data['meals'] = meals!.map((v) => v.toJson()).toList();
     }
     return data;
   }
+
+  @override
+  List<Object?> get props => [meals];
 }
 
-class Meals {
+class Meals extends Equatable {
   String? strCategory;
 
   Meals({this.strCategory});
@@ -35,4 +40,7 @@ class Meals {
     data['strCategory'] = this.strCategory;
     return data;
   }
+
+  @override
+  List<Object?> get props => [strCategory];
 }

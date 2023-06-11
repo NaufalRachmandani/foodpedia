@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:foodpedia/common/constant.dart';
-import 'package:foodpedia/data/source/remote/food/FoodListResponse.dart';
+import 'package:foodpedia/data/source/remote/food/food_list_response.dart';
 import 'package:foodpedia/injection.dart' as di;
 import 'package:foodpedia/presentation/food_detail/bloc/food_detail_bloc.dart';
 import 'package:foodpedia/presentation/food_detail/food_detail_page.dart';

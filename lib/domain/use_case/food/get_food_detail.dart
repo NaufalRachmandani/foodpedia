@@ -1,6 +1,6 @@
 import 'package:dartz/dartz.dart';
 import 'package:foodpedia/common/failure.dart';
-import 'package:foodpedia/data/source/remote/food/FoodDetailResponse.dart';
+import 'package:foodpedia/data/source/remote/food/food_detail_response.dart';
 import 'package:foodpedia/domain/repositories/food_repository.dart';
 
 class GetFoodDetail {
